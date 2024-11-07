@@ -10,6 +10,14 @@ header {
     align-items: center;
 }
 
+a:hover {
+    color: red;
+}
+
+h2, h4 {
+    text-transform: uppercase;
+}
+
 header h1 {
     color: red;
     margin: 0;
@@ -47,6 +55,10 @@ header .user-panel {
     border: solid black;
 }
 
+.nav-menu {
+    display: none;
+}
+
 main {
     aspect-ratio: 5/3;
     border: 1px solid black;
@@ -79,6 +91,12 @@ main {
 .movie-details p {
     margin: .5rem 0;
 }
+
+.hero p {
+    width: 65%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
 
 button {
     background: red;
@@ -125,11 +143,12 @@ button i{
 
 .movie-card {
     border: 1px solid black;
-    min-width: 250px;
+    min-width: 180px;
     border-radius: 1rem;
     padding: 2rem 1rem;
     display: flex;
     align-items: center;
+    margin: 1rem
 }
 
 .movie-card h4 {
@@ -149,7 +168,7 @@ button i{
 .movie-card button {
     padding: .5rem 1.8rem;
     border-radius: .5rem;
-    font-size: 1rem;
+    font-size: .8rem;
 }
 
 .movie-card button i {
@@ -161,7 +180,7 @@ button i{
 footer {
     display: flex;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 1rem 2rem;
 }
 
 footer h5 {
@@ -175,6 +194,11 @@ footer h5 {
 
 .social-navigation {
     min-height: 120px;
+}
+
+.social-navigation i {
+    display: flex;
+    
 }
 
 .mobile-app-navigation {
