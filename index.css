@@ -66,7 +66,10 @@ main {
     padding: 1rem;
     display: flex;
     align-items: center;
+    background-image: url("/assets/images/tsubasa.jpg");
+    background-size: cover;
 }
+
 
 .user-rating i {
     color: red;
@@ -94,7 +97,8 @@ main {
 
 .hero p {
     width: 65%;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
 }
 
 
@@ -181,10 +185,12 @@ footer {
     display: flex;
     justify-content: space-between;
     gap: 1rem 2rem;
+    
 }
 
 footer h5 {
     margin-top: 0;
+    text-wrap: nowrap;
 }
 
 .footer-navigation nav {
@@ -194,12 +200,14 @@ footer h5 {
 
 .social-navigation {
     min-height: 120px;
+    text-align: center;
+    justify-content: center;
 }
 
-.social-navigation i {
-    display: flex;
-    
+.social-navigation i:hover {
+    color:dimgrey;
 }
+
 
 .mobile-app-navigation {
     min-width: 230px;
@@ -207,6 +215,10 @@ footer h5 {
 
 .mobile-app-navigation img {
     height: 2rem;
+}
+
+.mobile-app-navigation img:hover {
+    background-color: dimgray;
 }
 
 @media (max-width: 500px) {
@@ -232,6 +244,7 @@ footer h5 {
     .main-movie {
         width: 100%;
     }
+
 
     footer {
         flex-wrap: wrap;
