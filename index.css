@@ -75,15 +75,32 @@ main {
     color: red;
 }
 
+.user-rating {
+    color: white;
+}
+
 .content-rating {
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: .3rem;
     padding: 0.2rem;
     margin: 0.5rem;
+    color: white;
+}
+
+.movie-duration {
+    color: white;
 }
 
 .main-movie {
     width: 60%;
+}
+
+.movie-card {
+    background-image: url("/assets/images/pokemon.jpg");
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .movie-details span {
@@ -204,6 +221,13 @@ footer h5 {
     justify-content: center;
 }
 
+.social-navigation div{
+    display: flex;
+    gap: .5rem;
+    
+    
+}
+
 .social-navigation i:hover {
     color:dimgrey;
 }
@@ -257,5 +281,9 @@ footer h5 {
 
     .social-navigation, .mobile-app-navigation {
         width: 100%;
+    }
+
+    .social-navigation div{
+        justify-content: center;
     }
 }
